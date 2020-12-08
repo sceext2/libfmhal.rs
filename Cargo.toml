@@ -4,4 +4,17 @@ version = "0.1.0"
 authors = ["sceext <sceext@foxmail.com>"]
 edition = "2018"
 
+[features]
+default = ["target_stm32f103c8"]
+target_stm32f = []
+target_stm32f1 = ["target_stm32f", "libfmshal/target_stm32f1"]
+target_stm32f103c8 = ["target_stm32f1"]
+target_stm32f103re = ["target_stm32f1"]
+target_stm32f0 = ["target_stm32f", "libfmshal/target_stm32f0"]
+target_stm32f030rc = ["target_stm32f0"]
+
 [dependencies]
+libfms = { path = "../libfms.rs" }
+libfmp = { path = "../libfmp.rs" }
+libfmshal = { path = "../libfmshal.rs" }
+libfmel = { path = "../libfmel.rs" }
