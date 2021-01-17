@@ -1,16 +1,19 @@
 #![no_std]
 #![deny(unsafe_code)]
 
-mod chip_agent;
-mod system_core;
-mod ocd;
-mod driver;
+mod syscore;
+mod ed;
 
-#[cfg(feature = "target_stm32f1")]
-mod target_stm32f1;
+#[cfg(feature = "shal")]
+mod shal;
 
-#[cfg(feature = "target_stm32f0")]
-mod target_stm32f0;
+#[cfg(feature = "el")]
+mod el;
+
+#[cfg(feature = "target")]
+mod target;
+
+// TODO
 
 #[cfg(test)]
 mod test;

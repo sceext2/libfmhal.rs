@@ -10,7 +10,15 @@ TODO
 
 ## Cargo features
 
-default: `target_stm32f103c8`
+default: `el`, `target_stm32f103c8`
+
++ **`shal`** (TODO)
+
+  Fat Mosquito Safe HAL (for MCU)
+
++ **`el`** (TODO)
+
+  Fat Mosquito Event Loop (for MCU)
 
 + **`target_stm32f103c8`** (TODO)
 
