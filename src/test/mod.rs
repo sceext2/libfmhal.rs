@@ -1,4 +1,7 @@
+#[cfg(feature = "shal")]
+mod shal;
+
 #[test]
-fn it_works() {
-    assert_eq!(2 + 2, 4);
+fn allow_use_std_in_test() {
+    println!("Hello, world !");
 }

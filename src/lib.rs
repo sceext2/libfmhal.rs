@@ -1,19 +1,18 @@
-#![no_std]
+#![cfg_attr(not(test), no_std)]
 #![deny(unsafe_code)]
 
-mod syscore;
-mod ed;
+pub mod ed;
+pub mod syscore;
 
 #[cfg(feature = "shal")]
-mod shal;
+pub mod shal;
 
 #[cfg(feature = "el")]
-mod el;
+pub mod el;
 
+// not pub
 #[cfg(feature = "target")]
 mod target;
-
-// TODO
 
 #[cfg(test)]
 mod test;
