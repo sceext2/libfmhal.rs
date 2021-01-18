@@ -65,6 +65,7 @@ pub trait Level14T: Level13T {}
 pub trait Level15T: Level14T {}
 
 // level0
+#[derive(Clone, Copy)]
 pub struct Level0 {
     level: ShareLevelE,
 }
@@ -86,6 +87,7 @@ impl Level0 {
 }
 
 // level1
+#[derive(Clone, Copy)]
 pub struct Level1 {
     level: ShareLevelE,
 }
@@ -108,6 +110,7 @@ impl Level1 {
 }
 
 // level2
+#[derive(Clone, Copy)]
 pub struct Level2 {
     level: ShareLevelE,
 }
@@ -131,6 +134,7 @@ impl Level2 {
 }
 
 // level3
+#[derive(Clone, Copy)]
 pub struct Level3 {
     level: ShareLevelE,
 }
@@ -155,6 +159,7 @@ impl Level3 {
 }
 
 // level4
+#[derive(Clone, Copy)]
 pub struct Level4 {
     level: ShareLevelE,
 }
@@ -180,6 +185,7 @@ impl Level4 {
 }
 
 // level5
+#[derive(Clone, Copy)]
 pub struct Level5 {
     level: ShareLevelE,
 }
@@ -206,6 +212,7 @@ impl Level5 {
 }
 
 // level6
+#[derive(Clone, Copy)]
 pub struct Level6 {
     level: ShareLevelE,
 }
@@ -233,6 +240,7 @@ impl Level6 {
 }
 
 // level7
+#[derive(Clone, Copy)]
 pub struct Level7 {
     level: ShareLevelE,
 }
@@ -261,6 +269,7 @@ impl Level7 {
 }
 
 // level8
+#[derive(Clone, Copy)]
 pub struct Level8 {
     level: ShareLevelE,
 }
@@ -290,6 +299,7 @@ impl Level8 {
 }
 
 // level9
+#[derive(Clone, Copy)]
 pub struct Level9 {
     level: ShareLevelE,
 }
@@ -320,6 +330,7 @@ impl Level9 {
 }
 
 // level10
+#[derive(Clone, Copy)]
 pub struct Level10 {
     level: ShareLevelE,
 }
@@ -351,6 +362,7 @@ impl Level10 {
 }
 
 // level11
+#[derive(Clone, Copy)]
 pub struct Level11 {
     level: ShareLevelE,
 }
@@ -383,6 +395,7 @@ impl Level11 {
 }
 
 // level12
+#[derive(Clone, Copy)]
 pub struct Level12 {
     level: ShareLevelE,
 }
@@ -416,6 +429,7 @@ impl Level12 {
 }
 
 // level13
+#[derive(Clone, Copy)]
 pub struct Level13 {
     level: ShareLevelE,
 }
@@ -450,6 +464,7 @@ impl Level13 {
 }
 
 // level14
+#[derive(Clone, Copy)]
 pub struct Level14 {
     level: ShareLevelE,
 }
@@ -485,6 +500,7 @@ impl Level14 {
 }
 
 // level15
+#[derive(Clone, Copy)]
 pub struct Level15 {
     level: ShareLevelE,
 }
